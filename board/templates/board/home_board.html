@@ -1,0 +1,32 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}Доска объявлений{% endblock %}
+
+{% block content %}
+    <h1>Доска объявлений</h1>
+    {% for board in boards %}
+    {{ board }}<br> {# если получится, до добавишь остальные поля #}
+{% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+{#{% for elem in object_list %}#}
+{#<div class="alert alert-warning">#}
+{#        <h3>{{ elem.title }}</h3>#}
+{#        <p>{{ elem.anons }}</p>#}
+{#        <p>{{ elem.full_text }}</p>#}
+{#        <p>{{ elem.date }}</p>#}
+{#    </div>#}
+
+
+
+
+
+
+
+
